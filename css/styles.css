@@ -11270,7 +11270,7 @@ img::-moz-selection {
   font-size: 1rem;
   color: #fff;
   letter-spacing: 0.0625em;
-  padding: 1rem;
+  padding: 1.5rem;
 }
 
 #mainNav.navbar .container .navbar-collapse .navbar-nav .nav-item .nav-link.active,
@@ -11278,22 +11278,16 @@ img::-moz-selection {
   color: #fdc06adc;
 }
 
+#mainNav.navbar.navbar-shrink .container .navbar-collapse .navbar-nav .nav-item .nav-link {
+  padding: 0.9rem 1.5rem;
+  -webkit-transition: padding-top 0.3s ease-in-out, padding-bottom 0.3s ease-in-out;
+  transition: padding-top 0.3s ease-in-out, padding-bottom 0.3s ease-in-out;
+}
+
 #mainNav.navbar.navbar-shrink .container .navbar-collapse .navbar-nav .nav-item .nav-link.active,
 #mainNav.navbar.navbar-shrink .container .navbar-collapse .navbar-nav .nav-item .nav-link:hover {
-  /* color: #f6c279dc; */
   color: #fff;
   background-color: #28a745;
-  /* font-weight: bold; */
-}
-
-#mainNav.navbar .container .navbar-collapse .navbar-nav .nav-item .nav-link {
-  -webkit-transition-delay: 0s;
-          transition-delay: 0s;
-}
-
-#mainNav.navbar.navbar-shrink .container .navbar-collapse .navbar-nav .nav-item .nav-link {
-  -webkit-transition-delay: 0.3s;
-          transition-delay: 0.3s;
 }
 
 #mainNav .navbar-nav .nav-item .dropdown-menu {
@@ -11305,12 +11299,8 @@ img::-moz-selection {
 
 @media (min-width: 992px) {
   #mainNav {
-    padding-top: 1rem;
-    padding-bottom: 1rem;
     border: none;
     background-color: transparent;
-    -webkit-transition: padding-top 0.3s ease-in-out, padding-bottom 0.3s ease-in-out;
-    transition: padding-top 0.3s ease-in-out, padding-bottom 0.3s ease-in-out;
   }
   #mainNav .navbar-brand {
     font-size: 1.5em;
@@ -11791,13 +11781,23 @@ section#contact form#contactForm :-ms-input-placeholder {
 }
 
 #dropdown-product.dropdown-shrink {
-  /* padding-top: 0rem; */
   padding-bottom: 1rem;
-  /* background-color: #61b15aef; */
   background-color: #b1dfab;
+}
+
+#dropdown-product.dropdown-shrink .dropdown-item {
+  color: #002f00;
+}
+
+#dropdown-product.dropdown-shrink .dropdown-item:hover {
+  color: #fff;
 }
 
 .btn.btn-primary.btn-xl.text-uppercase.js-scroll-trigger {
   margin-top: 0.8rem;
+}
+
+#dropdown-product {
+  background-color: rgba(60, 95, 60, 0.376);
 }
 /*# sourceMappingURL=styles.css.map */
